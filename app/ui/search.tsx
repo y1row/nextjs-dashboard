@@ -15,6 +15,7 @@ export default function Search({ placeholder }: { placeholder: string }) {
     console.log(text);
 
     const params = new URLSearchParams(searchParams);
+    params.set('page', '1');
     if (text) {
       params.set('query', text);
     } else {
